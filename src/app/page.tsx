@@ -1,4 +1,3 @@
-import { ModeToggle } from "@/components/modules/ModeToggle";
 import Image from "@/components/ui/Image";
 import Title from "@/components/ui/title";
 import { Skills } from "./types";
