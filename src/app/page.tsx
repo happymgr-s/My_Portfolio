@@ -99,6 +99,16 @@ export default function Home() {
         </div>
 
         <div>
+          <Title>成果物</Title>
+          <ul>
+            <li>aaa</li>
+            <li>aaa</li>
+            <li>aaa</li>
+            <li>aaa</li>
+          </ul>
+        </div>
+
+        <div>
           <Title>スキル</Title>
           <ul className="grid grid-cols-8 gap-6">
             {skills.map((skill) => (
