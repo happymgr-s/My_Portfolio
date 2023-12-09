@@ -1,8 +1,4 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: "export",
-};
+const nextConfig = {};
 
 module.exports = nextConfig;
-
-const branchName = process.env.BRANCH_NAME ? "/" + process.env.BRANCH_NAME : "";
