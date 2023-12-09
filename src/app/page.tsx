@@ -109,7 +109,7 @@ export default function Home() {
           <Title>スキル</Title>
           <ul className="grid grid-cols-5 gap-6">
             {skills.map((skill) => (
-              <li>
+              <li key={skill.title}>
                 <SkillCard
                   title={skill.title}
                   src={skill.src}
