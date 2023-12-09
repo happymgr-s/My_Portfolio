@@ -2,7 +2,6 @@ import Image from "@/components/ui/Image";
 import Title from "@/components/ui/title";
 import { Skills } from "./types";
 import SkillCard from "@/components/modules/SkillCard";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 export default function Home() {
   const skills: Skills[] = [
@@ -53,7 +52,7 @@ export default function Home() {
       alt: "Gitの画像",
     },
     {
-      title: "Python（勉強中）",
+      title: "Python",
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
       alt: "pythonの画像",
     },
@@ -66,22 +65,16 @@ export default function Home() {
           <Title>自己紹介</Title>
           <div className="flex items-start gap-16">
             <div className="flex flex-col items-center gap-4 min-w-fit">
-              <div className=" w-40 border-2 border-slate-300 rounded-full">
-                <Avatar>
-                  <AvatarImage src="猫.png" />
-                  <AvatarFallback>ねっこ</AvatarFallback>
-                </Avatar>
-              </div>
-              {/* <Image
+              <Image
                 divClassName="w-24 border-2 border-solid border-slate-500 rounded-full"
                 src="猫.png"
                 alt="プロフィール画像"
-              /> */}
+              />
               <p className="text-sm">わっしょいもぐら侍</p>
             </div>
             <p className=" leading-loose">
               わっしょいもぐら侍です。埼玉県在住、24歳、エンジニア歴一年の駆け出しエンジニアです。得意な分野はフロントエンドです。現在、バックエンド・データベースも勉強中。
-              このサイトは、Next.JS・React・TypeScript・SupaBase・shadcn・tailwindCSSを用いて制作しています。
+              成果物ができたらここに載せていく。
             </p>
           </div>
         </div>
@@ -107,7 +100,7 @@ export default function Home() {
 
         <div>
           <Title>スキル</Title>
-          <ul className="grid grid-cols-5 gap-6">
+          <ul className="grid grid-cols-8 gap-6">
             {skills.map((skill) => (
               <li key={skill.title}>
                 <SkillCard
