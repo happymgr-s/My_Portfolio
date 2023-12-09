@@ -4,3 +4,5 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
+
+const branchName = process.env.BRANCH_NAME ? "/" + process.env.BRANCH_NAME : "";
