@@ -2,6 +2,7 @@ import Image from "@/components/ui/Image";
 import Title from "@/components/ui/title";
 import { Skills } from "./types";
 import SkillCard from "@/components/modules/SkillCard";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 export default function Home() {
   const skills: Skills[] = [
@@ -60,16 +61,22 @@ export default function Home() {
 
   return (
     <div>
-      <div className="flex flex-col gap-36">
+      <div className="flex flex-col gap-28">
         <div>
           <Title>自己紹介</Title>
           <div className="flex items-start gap-16">
             <div className="flex flex-col items-center gap-4 min-w-fit">
-              <Image
+              <div className=" w-40 border-2 border-slate-300 rounded-full">
+                <Avatar>
+                  <AvatarImage src="猫.png" />
+                  <AvatarFallback>ねっこ</AvatarFallback>
+                </Avatar>
+              </div>
+              {/* <Image
                 divClassName="w-24 border-2 border-solid border-slate-500 rounded-full"
                 src="猫.png"
                 alt="プロフィール画像"
-              />
+              /> */}
               <p className="text-sm">わっしょいもぐら侍</p>
             </div>
             <p className=" leading-loose">
@@ -81,7 +88,7 @@ export default function Home() {
 
         <div>
           <Title>経歴</Title>
-          <div className="flex flex-col gap-12">
+          <div className="flex flex-col gap-10">
             <p>
               2020年、地元の市役所に入社。鳥獣対策や、森林整備の事業を主に担当する。
             </p>
